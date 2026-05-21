@@ -1,5 +1,6 @@
 package net.likelion.backend.domain.memo.repository;
 
+import jakarta.validation.constraints.NotBlank;
 import net.likelion.backend.domain.memo.entity.Memo;
 
 import java.util.List;
@@ -11,5 +12,5 @@ public interface MemoRepository {
 
     Memo save(Memo memo);
 
-    Optional<Memo> findById(Long id);
+    Optional<Memo> findById(@NotBlank String id);
 }

@@ -1,5 +1,6 @@
 package net.likelion.backend.domain.memo.repository;
 
+import jakarta.validation.constraints.NotBlank;
 import net.likelion.backend.domain.memo.entity.Memo;
 import org.springframework.stereotype.Repository;
 
@@ -26,7 +27,7 @@ public class MemoryMemoRepository implements MemoRepository {
     }
 
     @Override
-    public Optional<Memo> findById(Long id) {
+    public Optional<Memo> findById(@NotBlank String id) {
         return memos.stream()
                 .filter( memo -> memo.getId().equals(id))
                 .findFirst();
