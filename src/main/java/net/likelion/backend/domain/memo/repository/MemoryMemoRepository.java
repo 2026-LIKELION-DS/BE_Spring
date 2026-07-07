@@ -11,6 +11,7 @@ import java.util.concurrent.atomic.AtomicLong;
 @Repository
 public class MemoryMemoRepository implements MemoRepository {
     private final List<Memo> memos = new ArrayList<>();
+
     private final AtomicLong idCounter = new AtomicLong(1);
 
     @Override
@@ -34,4 +35,7 @@ public class MemoryMemoRepository implements MemoRepository {
     public Long generateId() {
         return idCounter.getAndIncrement();
     }
+
+
 }
+
