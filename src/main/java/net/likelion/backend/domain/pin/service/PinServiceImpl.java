@@ -7,6 +7,8 @@ import net.likelion.backend.domain.pin.dto.PinRequestDto;
 import net.likelion.backend.domain.pin.dto.PinResponseDto;
 import net.likelion.backend.domain.pin.entity.Pin;
 import net.likelion.backend.domain.pin.repository.MemoryPinRepository;
+import net.likelion.backend.global.exception.BaseException;
+import net.likelion.backend.global.exception.ErrorCode;
 import org.springframework.stereotype.Service; // 이 클래스를 Spring의 서비스 Bean으로 등록
 
 import java.util.List;
@@ -43,7 +45,7 @@ public class PinServiceImpl implements PinService { // PinService 인터페이�
     public PinResponseDto create(PinRequestDto request) {
         // 요청에 담긴 memoId로 메모를 조회 → 없으면 예외 발생
         Memo memo = memoRepository.findById(request.getMemoId())
-                .orElseThrow(() -> new IllegalArgumentException("존재하지 않는 메모입니다."));
+                .orElseThrow(() -> new BaseException(ErrorCode.MEMO_NOT_FOUND));
 
         // 새 핀의 고유 ID 발급
         Long id = pinRepository.generateId();
