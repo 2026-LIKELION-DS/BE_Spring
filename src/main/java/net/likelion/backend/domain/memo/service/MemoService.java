@@ -8,6 +8,4 @@ import java.util.List;
 public interface MemoService {
     List<MemoResponseDto> getAll();
 
-    MemoResponseDto create(MemoRequestDto request);
-
-}
+    MemoResponseDto create(MemoRequestDto request); }

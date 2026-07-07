@@ -30,5 +30,4 @@ public class MemoServiceImpl implements MemoService {
         Memo memo = new Memo(id, request.getContent());
         return MemoResponseDto.from(memoRepository.save(memo));
     }
-
 }
