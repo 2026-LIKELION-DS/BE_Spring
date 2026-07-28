@@ -1,0 +1,30 @@
+services:
+  app: # app 이하 코드를 도커 이미지 빌드 후 추가!
+    image: springboot-app:local
+    container_name: springboot-app-dev
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+    depends_on:
+      - springboot-mysql
+    restart: unless-stopped
+
+  springboot-mysql:
+    image: mysql:8.0.43
+    container_name: springboot-mysql-dev
+    environment:
+      MYSQL_ROOT_PASSWORD: lion1234
+      MYSQL_DATABASE: springboot_db
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin1234!
+      TZ: Asia/Seoul
+    command: [
+      "--default-authentication-plugin=caching_sha2_password",
+      "--character-set-server=utf8mb4",
+      "--collation-server=utf8mb4_unicode_ci"
+    ]
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./_vol/mysql:/var/lib/mysql
