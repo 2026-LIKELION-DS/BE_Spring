@@ -16,7 +16,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: lion1234
       MYSQL_DATABASE: springboot_db
-      MYSQL_USER: admin
+      MYSQL_USER: root
       MYSQL_PASSWORD: admin1234!
       TZ: Asia/Seoul
     command: [
