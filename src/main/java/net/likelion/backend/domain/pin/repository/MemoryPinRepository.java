@@ -9,7 +9,8 @@ import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
 
 @Repository
-public class MemoryPinRepository implements PinRepository {
+public class
+MemoryPinRepository implements PinRepository {
 
     private final List<Pin> pins = new ArrayList<>();
     private final AtomicLong idCounter = new AtomicLong(1);
