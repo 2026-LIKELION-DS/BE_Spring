@@ -5,4 +5,5 @@ build
 .DS_Store
 node_modules
 *.log
+_vol/deploy/_vol/
 _vol/
