@@ -36,7 +36,9 @@ public class HelloController {
     }
 
     @GetMapping("/hello2")
-    public String hello2() {
-        return "깃허브 액션 CICD 파이프라인 테스트";
+    public Map<String, String> hello2() {
+        Map<String, String> response = new HashMap<>();
+        response.put("message", "깃허브 액션 CICD 파이프라인 테스트");
+        return response;
     }
 }

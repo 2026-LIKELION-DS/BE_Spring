@@ -16,6 +16,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig {
 
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -32,7 +33,10 @@ public class SecurityConfig {
                                 "/swagger",
                                 "/api-docs/**",
                                 "/api/users/signup",
-                                "/api/users/login"
+                                "/api/users/login",
+                                "/hello",
+                                "/hello/**",
+                                "/hello2"
                         ).permitAll()
                         .anyRequest().permitAll()
                 )
