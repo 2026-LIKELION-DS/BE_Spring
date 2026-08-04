@@ -12,6 +12,10 @@ RUN ./gradlew dependencies --no-daemon || true
 
 # 소스 복사 후 실행 가능한 .jar 파일로 빌드
 COPY . .
+
+# 💡 [핵심 수정] 소스 전체 복사 후 gradlew 권한을 한 번 더 확실하게 줍니다!
+RUN chmod +x gradlew
+
 RUN ./gradlew clean bootJar --no-daemon
 
 # ===== 2) RUNTIME STAGE =====
@@ -25,8 +29,5 @@ WORKDIR /opt/app
 COPY --from=build /app/build/libs/*.jar app.jar
 
 EXPOSE 8080
-
-# (Actuator 없으면 HEALTHCHECK는 없어도 OK)
-# HEALTHCHECK --interval=30s --timeout=3s --retries=3 CMD curl -f http://localhost:8080/actuator/health || exit 1
 
 ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
