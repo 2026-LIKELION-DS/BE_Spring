@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  app:
+    image: backend-app:local
+    container_name: backend-app-dev
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+    depends_on:
+      backend-mysql:
+        condition: service_healthy # MySQL 헬스체크 통과 후 앱 실행
+    restart: unless-stopped
+
+  backend-mysql:
+    image: mysql:8.0.43
+    container_name: backend-mysql-dev
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password123!
+      MYSQL_DATABASE: backend_db
+      MYSQL_USER: likelion_user
+      MYSQL_PASSWORD: backend_password123!
+      TZ: Asia/Seoul
+    command: [
+      "--default-authentication-plugin=caching_sha2_password",
+      "--character-set-server=utf8mb4",
+      "--collation-server=utf8mb4_unicode_ci"
+    ]
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./_vol/mysql:/var/lib/mysql
+    # ⬇️ DB가 실제로 쿼리를 받을 수 있는 상태인지 검사합니다.
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot_password123!"]
+      interval: 5s
+      timeout: 3s
+      retries: 10

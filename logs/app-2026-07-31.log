@@ -1,0 +1,106 @@
+2026-07-31 12:22:29.211 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-31 12:22:29.266 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 9304 (C:\Users\Seoyeon\Desktop\ㅤ\멋사\세션\backend\BE_Spring\out\production\classes started by Seoyeon in C:\Users\Seoyeon\Desktop\ㅤ\멋사\세션\backend\BE_Spring)
+2026-07-31 12:22:29.267 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-31 12:22:29.267 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-31 12:22:29.314 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-31 12:22:29.314 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-31 12:22:30.236 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-31 12:22:30.294 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2026-07-31 12:22:30.886 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-31 12:22:30.898 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-31 12:22:30.900 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-31 12:22:30.900 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-31 12:22:30.942 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-31 12:22:30.943 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1628 ms
+2026-07-31 12:22:31.027 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-31 12:22:31.232 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:dcfd5922-c775-41e4-bdeb-9ddaac1f2b20 user=SA
+2026-07-31 12:22:31.234 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-31 12:22:31.267 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-31 12:22:31.323 [restartedMain] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-07-31 12:22:31.355 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-31 12:22:31.630 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-31 12:22:31.703 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-31 12:22:32.454 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-31 12:22:32.489 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-31 12:22:32.753 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-31 12:22:32.753 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-31 12:22:32.884 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-31 12:22:32.922 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-31 12:22:33.397 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcfd5922-c775-41e4-bdeb-9ddaac1f2b20'
+2026-07-31 12:22:33.471 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-31 12:22:33.491 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-31 12:22:33.504 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-31 12:22:33.512 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 4.972 seconds (process running for 5.98)
+2026-07-31 12:24:24.449 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-31 12:24:24.449 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-31 12:24:24.450 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-31 12:24:24.472 [http-nio-8080-exec-1] [fb061943] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.html
+2026-07-31 12:24:24.503 [http-nio-8080-exec-1] [fb061943] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.html 200 (31ms)
+2026-07-31 12:24:24.511 [http-nio-8080-exec-7] [8294bf1f] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-ui.css
+2026-07-31 12:24:24.513 [http-nio-8080-exec-5] [406b9824] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-initializer.js
+2026-07-31 12:24:24.511 [http-nio-8080-exec-8] [966e8e82] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.css
+2026-07-31 12:24:24.513 [http-nio-8080-exec-4] [20aab6ea] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-ui-bundle.js
+2026-07-31 12:24:24.515 [http-nio-8080-exec-6] [77a62929] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-07-31 12:24:24.519 [http-nio-8080-exec-8] [966e8e82] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.css 200 (8ms)
+2026-07-31 12:24:24.521 [http-nio-8080-exec-7] [8294bf1f] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-ui.css 200 (10ms)
+2026-07-31 12:24:24.526 [http-nio-8080-exec-6] [77a62929] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-ui-standalone-preset.js 200 (11ms)
+2026-07-31 12:24:24.537 [http-nio-8080-exec-4] [20aab6ea] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-ui-bundle.js 200 (24ms)
+2026-07-31 12:24:24.550 [http-nio-8080-exec-5] [406b9824] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-initializer.js 200 (37ms)
+2026-07-31 12:24:24.649 [http-nio-8080-exec-3] [74ddc1f9] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs/swagger-config
+2026-07-31 12:24:24.651 [http-nio-8080-exec-2] [51550f79] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/favicon-32x32.png
+2026-07-31 12:24:24.654 [http-nio-8080-exec-2] [51550f79] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/favicon-32x32.png 200 (3ms)
+2026-07-31 12:24:24.686 [http-nio-8080-exec-3] [74ddc1f9] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs/swagger-config 200 (37ms)
+2026-07-31 12:24:24.693 [http-nio-8080-exec-9] [4171e31e] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs
+2026-07-31 12:24:24.985 [http-nio-8080-exec-9] [4171e31e] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 281 ms
+2026-07-31 12:24:25.014 [http-nio-8080-exec-9] [4171e31e] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs 200 (321ms)
+2026-07-31 12:25:25.526 [http-nio-8080-exec-4] [c1387bcd] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-31 12:25:25.701 [http-nio-8080-exec-4] [c1387bcd] WARN  n.l.b.g.e.GlobalExceptionHandler - [BaseException] code: USER_NOT_FOUND, message: 사용자를 찾을 수 없습니다.
+2026-07-31 12:25:25.705 [http-nio-8080-exec-4] [c1387bcd] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [net.likelion.backend.global.exception.BaseException: 사용자를 찾을 수 없습니다.]
+2026-07-31 12:25:25.705 [http-nio-8080-exec-4] [c1387bcd] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 404 (179ms)
+2026-07-31 12:25:45.328 [http-nio-8080-exec-5] [e7dfd6b5] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/signup
+2026-07-31 12:25:45.466 [http-nio-8080-exec-5] [e7dfd6b5] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/signup 200 (138ms)
+2026-07-31 12:26:53.535 [http-nio-8080-exec-3] [2bf3a5f7] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-31 12:26:53.732 [http-nio-8080-exec-3] [2bf3a5f7] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 200 (197ms)
+2026-07-31 12:32:48.146 [http-nio-8080-exec-7] [d92f6eb9] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /memos
+2026-07-31 12:32:48.239 [http-nio-8080-exec-7] [d92f6eb9] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /memos 201 (93ms)
+2026-07-31 12:33:13.121 [http-nio-8080-exec-10] [fccd6b3c] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /Pins
+2026-07-31 12:33:13.130 [http-nio-8080-exec-10] [fccd6b3c] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /Pins 201 (9ms)
+2026-07-31 12:33:14.764 [http-nio-8080-exec-1] [4ec996b1] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /Pins
+2026-07-31 12:33:14.766 [http-nio-8080-exec-1] [4ec996b1] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /Pins 201 (2ms)
+2026-07-31 12:34:11.369 [http-nio-8080-exec-8] [7571b071] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /memos
+2026-07-31 12:34:11.382 [http-nio-8080-exec-8] [7571b071] WARN  n.l.b.g.e.GlobalExceptionHandler - [ValidationException] message: 메모는 200자 이하로 입력해 주세요.
+2026-07-31 12:34:11.384 [http-nio-8080-exec-8] [7571b071] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<net.likelion.backend.global.dto.ApiResponse<net.likelion.backend.domain.memo.dto.MemoResponseDto>> net.likelion.backend.domain.memo.controller.MemoController.create(net.likelion.backend.domain.memo.dto.MemoRequestDto): [Field error in object 'memoRequestDto' on field 'content': rejected value [안녕 메모 200자 넘김 안녕 메모 200자 넘김 안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김안녕 메모 200자 넘김]; codes [Size.memoRequestDto.content,Size.content,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [memoRequestDto.content,content]; arguments []; default message [content],200,0]; default message [메모는 200자 이하로 입력해 주세요.]] ]
+2026-07-31 12:34:11.385 [http-nio-8080-exec-8] [7571b071] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /memos 400 (16ms)
+2026-07-31 12:34:31.994 [http-nio-8080-exec-6] [d28ff704] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.html
+2026-07-31 12:34:31.999 [http-nio-8080-exec-6] [d28ff704] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.html 200 (5ms)
+2026-07-31 12:34:32.010 [http-nio-8080-exec-4] [81205774] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-ui.css
+2026-07-31 12:34:32.010 [http-nio-8080-exec-5] [e3e19524] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.css
+2026-07-31 12:34:32.010 [http-nio-8080-exec-3] [b73b69ee] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-07-31 12:34:32.010 [http-nio-8080-exec-2] [35a4368e] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-ui-bundle.js
+2026-07-31 12:34:32.013 [http-nio-8080-exec-9] [1ab46ac9] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-initializer.js
+2026-07-31 12:34:32.014 [http-nio-8080-exec-5] [e3e19524] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.css 200 (4ms)
+2026-07-31 12:34:32.016 [http-nio-8080-exec-4] [81205774] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-ui.css 200 (6ms)
+2026-07-31 12:34:32.018 [http-nio-8080-exec-9] [1ab46ac9] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-initializer.js 200 (5ms)
+2026-07-31 12:34:32.021 [http-nio-8080-exec-3] [b73b69ee] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-ui-standalone-preset.js 200 (11ms)
+2026-07-31 12:34:32.028 [http-nio-8080-exec-2] [35a4368e] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-ui-bundle.js 200 (18ms)
+2026-07-31 12:34:32.128 [http-nio-8080-exec-7] [03dd8801] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs/swagger-config
+2026-07-31 12:34:32.129 [http-nio-8080-exec-7] [03dd8801] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs/swagger-config 200 (1ms)
+2026-07-31 12:34:32.129 [http-nio-8080-exec-10] [18110f91] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/favicon-32x32.png
+2026-07-31 12:34:32.132 [http-nio-8080-exec-10] [18110f91] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/favicon-32x32.png 200 (3ms)
+2026-07-31 12:34:32.137 [http-nio-8080-exec-1] [f24ba224] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs
+2026-07-31 12:34:32.147 [http-nio-8080-exec-1] [f24ba224] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs 200 (10ms)
+2026-07-31 12:34:32.149 [http-nio-8080-exec-8] [a72c68e1] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/favicon-32x32.png
+2026-07-31 12:34:32.153 [http-nio-8080-exec-8] [a72c68e1] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/favicon-32x32.png 200 (4ms)
+2026-07-31 12:34:38.907 [http-nio-8080-exec-6] [3a6980a7] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /memos
+2026-07-31 12:34:38.909 [http-nio-8080-exec-6] [3a6980a7] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /memos 200 (2ms)
+2026-07-31 12:35:02.830 [http-nio-8080-exec-5] [ce2abc41] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /memos
+2026-07-31 12:35:02.832 [http-nio-8080-exec-5] [ce2abc41] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /memos 201 (2ms)
+2026-07-31 12:35:22.575 [http-nio-8080-exec-4] [fef93803] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /Pins
+2026-07-31 12:35:22.577 [http-nio-8080-exec-4] [fef93803] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /Pins 201 (2ms)

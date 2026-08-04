@@ -1,0 +1,163 @@
+2026-07-07 15:51:12.897 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-07 15:51:12.939 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 20308 (C:\Users\Seoyeon\Desktop\ㅤ\멋사\세션\backend\BE_Spring\out\production\classes started by Seoyeon in C:\Users\Seoyeon\Desktop\ㅤ\멋사\세션\backend\BE_Spring)
+2026-07-07 15:51:12.940 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 15:51:12.940 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 15:51:12.981 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-07 15:51:12.981 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-07 15:51:14.218 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 15:51:14.233 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 15:51:14.236 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 15:51:14.236 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 15:51:14.289 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 15:51:14.289 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1307 ms
+2026-07-07 15:51:14.337 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 15:51:14.878 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 15:51:14.898 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 15:51:14.918 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 15:51:14.929 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 2.614 seconds (process running for 3.243)
+2026-07-07 15:51:17.561 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-07 15:51:17.561 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-07 15:51:17.562 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-07 15:51:17.569 [http-nio-8080-exec-1] [1756b75e] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.html
+2026-07-07 15:51:17.603 [http-nio-8080-exec-1] [1756b75e] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.html 304 (34ms)
+2026-07-07 15:51:17.631 [http-nio-8080-exec-2] [0a03d934] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-initializer.js
+2026-07-07 15:51:17.680 [http-nio-8080-exec-2] [0a03d934] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-initializer.js 200 (49ms)
+2026-07-07 15:51:17.821 [http-nio-8080-exec-3] [95674d16] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs/swagger-config
+2026-07-07 15:51:17.864 [http-nio-8080-exec-3] [95674d16] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs/swagger-config 200 (43ms)
+2026-07-07 15:51:17.870 [http-nio-8080-exec-4] [c57b540d] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs
+2026-07-07 15:51:18.199 [http-nio-8080-exec-4] [c57b540d] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 319 ms
+2026-07-07 15:51:18.214 [http-nio-8080-exec-4] [c57b540d] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs 200 (344ms)
+2026-07-07 15:51:38.402 [http-nio-8080-exec-5] [41db2159] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /memos
+2026-07-07 15:51:38.620 [http-nio-8080-exec-5] [41db2159] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /memos 201 (217ms)
+2026-07-07 15:51:47.495 [http-nio-8080-exec-6] [64c8a329] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /memos
+2026-07-07 15:51:47.501 [http-nio-8080-exec-6] [64c8a329] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /memos 200 (6ms)
+2026-07-07 15:52:00.200 [http-nio-8080-exec-7] [e040ee25] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /Pins
+2026-07-07 15:52:00.209 [http-nio-8080-exec-7] [e040ee25] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /Pins 201 (9ms)
+2026-07-07 15:52:05.006 [http-nio-8080-exec-8] [6fbfd1e6] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /Pins
+2026-07-07 15:52:05.014 [http-nio-8080-exec-8] [6fbfd1e6] WARN  n.l.b.g.e.GlobalExceptionHandler - [BaseException] code: MEMO_NOT_FOUND, message: 메모를 찾을 수 없습니다.
+2026-07-07 15:52:05.017 [http-nio-8080-exec-8] [6fbfd1e6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [net.likelion.backend.global.exception.BaseException: 메모를 찾을 수 없습니다.]
+2026-07-07 15:52:05.018 [http-nio-8080-exec-8] [6fbfd1e6] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /Pins 404 (12ms)
+2026-07-07 15:52:10.237 [http-nio-8080-exec-9] [35fc47d5] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /Pins
+2026-07-07 15:52:10.242 [http-nio-8080-exec-9] [35fc47d5] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /Pins 200 (5ms)
+2026-07-07 15:56:15.334 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 15:56:15.339 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 17:37:18.218 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-07 17:37:18.275 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 7960 (C:\Users\Seoyeon\Desktop\ㅤ\멋사\세션\backend\BE_Spring\out\production\classes started by Seoyeon in C:\Users\Seoyeon\Desktop\ㅤ\멋사\세션\backend\BE_Spring)
+2026-07-07 17:37:18.275 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:37:18.276 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:37:18.325 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-07 17:37:18.325 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-07 17:37:20.232 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 17:37:20.311 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+2026-07-07 17:37:20.937 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:37:20.953 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:37:20.954 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:37:20.954 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 17:37:21.004 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:37:21.004 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2678 ms
+2026-07-07 17:37:21.111 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-07 17:37:21.335 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:e476fd40-958f-49da-bf78-9c09244d3e73 user=SA
+2026-07-07 17:37:21.337 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-07 17:37:21.379 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 17:37:21.443 [restartedMain] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-07-07 17:37:21.482 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 17:37:21.832 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 17:37:21.927 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 17:37:22.803 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 17:37:22.845 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 17:37:23.154 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 17:37:23.154 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 17:37:23.307 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 17:37:23.341 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 17:37:23.840 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:e476fd40-958f-49da-bf78-9c09244d3e73'
+2026-07-07 17:37:23.936 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 17:37:23.958 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:37:23.974 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 17:37:23.983 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 6.384 seconds (process running for 7.221)
+2026-07-07 17:37:27.422 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 17:37:27.426 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 17:37:27.430 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 17:37:27.438 [SpringApplicationShutdownHook] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 17:37:27.439 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-07 17:37:27.441 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-07 17:40:54.125 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-07 17:40:54.171 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 15584 (C:\Users\Seoyeon\Desktop\ㅤ\멋사\세션\backend\BE_Spring\out\production\classes started by Seoyeon in C:\Users\Seoyeon\Desktop\ㅤ\멋사\세션\backend\BE_Spring)
+2026-07-07 17:40:54.172 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:40:54.172 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:40:54.220 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-07 17:40:54.220 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-07 17:40:55.187 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 17:40:55.266 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+2026-07-07 17:40:55.898 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:40:55.910 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:40:55.911 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:40:55.911 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 17:40:55.960 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:40:55.960 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1740 ms
+2026-07-07 17:40:56.072 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-07 17:40:56.272 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bd7b8b44-2852-4ef6-af31-4e620353db7b user=SA
+2026-07-07 17:40:56.273 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-07 17:40:56.323 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 17:40:56.395 [restartedMain] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-07-07 17:40:56.444 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 17:40:56.832 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 17:40:56.915 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 17:40:57.846 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 17:40:57.893 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 17:40:58.216 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 17:40:58.216 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 17:40:58.412 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 17:40:58.460 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 17:40:59.043 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bd7b8b44-2852-4ef6-af31-4e620353db7b'
+2026-07-07 17:40:59.150 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 17:40:59.174 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:40:59.191 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 17:40:59.200 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 5.605 seconds (process running for 6.235)
+2026-07-07 17:40:59.296 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-07 17:40:59.296 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-07 17:40:59.298 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-07 17:40:59.322 [http-nio-8080-exec-1] [3527f11c] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.html
+2026-07-07 17:40:59.348 [http-nio-8080-exec-1] [3527f11c] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.html 304 (26ms)
+2026-07-07 17:40:59.470 [http-nio-8080-exec-2] [8903312f] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-initializer.js
+2026-07-07 17:40:59.521 [http-nio-8080-exec-2] [8903312f] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-initializer.js 200 (51ms)
+2026-07-07 17:40:59.599 [http-nio-8080-exec-3] [b1fe3c7e] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs/swagger-config
+2026-07-07 17:40:59.649 [http-nio-8080-exec-3] [b1fe3c7e] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs/swagger-config 200 (50ms)
+2026-07-07 17:40:59.695 [http-nio-8080-exec-4] [4ab17fdd] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs
+2026-07-07 17:41:00.106 [http-nio-8080-exec-4] [4ab17fdd] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 395 ms
+2026-07-07 17:41:00.128 [http-nio-8080-exec-4] [4ab17fdd] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs 200 (433ms)
+2026-07-07 17:41:22.624 [http-nio-8080-exec-5] [581d38be] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/signup
+2026-07-07 17:41:23.673 [http-nio-8080-exec-5] [581d38be] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/signup 200 (1049ms)
+2026-07-07 17:41:53.869 [http-nio-8080-exec-6] [7ab8be26] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-07 17:41:54.375 [http-nio-8080-exec-6] [7ab8be26] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 200 (506ms)
+2026-07-07 17:42:32.069 [http-nio-8080-exec-9] [f192a249] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.html
+2026-07-07 17:42:32.077 [http-nio-8080-exec-9] [f192a249] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.html 304 (8ms)
+2026-07-07 17:42:32.106 [http-nio-8080-exec-10] [77a569ec] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-initializer.js
+2026-07-07 17:42:32.115 [http-nio-8080-exec-10] [77a569ec] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-initializer.js 200 (9ms)
+2026-07-07 17:42:32.158 [http-nio-8080-exec-1] [d78adb05] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs/swagger-config
+2026-07-07 17:42:32.162 [http-nio-8080-exec-1] [d78adb05] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs/swagger-config 200 (4ms)
+2026-07-07 17:42:32.178 [http-nio-8080-exec-2] [9ea4e339] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs
+2026-07-07 17:42:32.209 [http-nio-8080-exec-2] [9ea4e339] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs 200 (31ms)
+2026-07-07 17:42:47.456 [http-nio-8080-exec-3] [5855ce2b] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-07 17:42:47.826 [http-nio-8080-exec-3] [5855ce2b] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 200 (370ms)
+2026-07-07 17:56:37.317 [http-nio-8080-exec-6] [a4c6c659] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /memos
+2026-07-07 17:56:37.498 [http-nio-8080-exec-6] [a4c6c659] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /memos 201 (181ms)
+2026-07-07 18:10:01.824 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 18:10:01.845 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 18:10:01.879 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:10:01.993 [SpringApplicationShutdownHook] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 18:10:01.994 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-07 18:10:01.999 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
