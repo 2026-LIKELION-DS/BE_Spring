@@ -34,9 +34,9 @@ public class HelloController {
         response.put("page", String.valueOf(page));
         return response;
     }
+
+    @GetMapping("/hello2")
+    public String hello2() {
+        return "깃허브 액션 CICD 파이프라인 테스트";
+    }
 }
-
-
-
-
-
