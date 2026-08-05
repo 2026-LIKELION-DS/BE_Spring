@@ -18,6 +18,10 @@ public class HelloController {
         response.put("message", "Hello, 멋사!");
         return response;
     }
+    @GetMapping("/hello2")
+    public String hello2(){
+        return "깃허브 액션 CICD 파이프라인 테스트";
+    }
     @GetMapping("/hello/{name}")
     public Map<String,String> helloName(@PathVariable String name){
         Map<String, String> response = new HashMap<>();
@@ -29,9 +33,9 @@ public class HelloController {
     public Map<String, String> helloSearch(
             @RequestParam String keyword,
             @RequestParam(defaultValue = "1") int page){
-            Map<String,String> response = new HashMap<>();
-            response.put("keyword", keyword);
-            response.put("page", String.valueOf(page));
-            return response;
+        Map<String,String> response = new HashMap<>();
+        response.put("keyword", keyword);
+        response.put("page", String.valueOf(page));
+        return response;
     }
 }

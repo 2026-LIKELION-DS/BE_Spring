@@ -18,3 +18,7 @@ springdoc:
     operations-sorter: alpha
   api-docs:
     path: /api-docs
+
+jwt:
+  secret: this-is-very-long-secret-key-for-likelion-14th-session-test
+  expiration: 86400000

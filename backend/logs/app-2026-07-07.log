@@ -1,0 +1,1236 @@
+2026-07-07 15:51:15.753 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-07 15:51:15.871 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 15:51:15.871 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 15:51:15.876 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 15:51:16.007 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-07 15:51:16.019 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-07 15:51:19.628 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 15:51:19.663 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 15:51:19.668 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 15:51:19.668 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 15:51:19.819 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 15:51:19.819 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3800 ms
+2026-07-07 15:51:20.032 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 15:51:22.547 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 15:51:22.598 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 15:51:22.672 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 15:51:22.704 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 7.833 seconds (process running for 8.914)
+2026-07-07 15:51:22.944 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-07 15:51:22.944 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-07 15:51:22.944 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-07-07 15:51:22.961 [http-nio-8080-exec-2] [93af9f53] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.html
+2026-07-07 15:51:23.093 [http-nio-8080-exec-2] [93af9f53] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.html 304 (132ms)
+2026-07-07 15:51:23.124 [http-nio-8080-exec-1] [42acc7b9] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-initializer.js
+2026-07-07 15:51:23.298 [http-nio-8080-exec-1] [42acc7b9] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-initializer.js 200 (174ms)
+2026-07-07 15:51:23.581 [http-nio-8080-exec-3] [f0f5c78b] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs/swagger-config
+2026-07-07 15:51:23.788 [http-nio-8080-exec-3] [f0f5c78b] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs/swagger-config 200 (207ms)
+2026-07-07 15:51:23.799 [http-nio-8080-exec-6] [f7811faa] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs
+2026-07-07 15:51:24.817 [http-nio-8080-exec-6] [f7811faa] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 997 ms
+2026-07-07 15:51:24.870 [http-nio-8080-exec-6] [f7811faa] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs 200 (1071ms)
+2026-07-07 15:51:41.777 [http-nio-8080-exec-4] [56deda4c] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /memos
+2026-07-07 15:51:41.949 [http-nio-8080-exec-4] [56deda4c] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /memos 201 (172ms)
+2026-07-07 15:51:45.728 [http-nio-8080-exec-5] [a4fdbfc1] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /memos
+2026-07-07 15:51:45.743 [http-nio-8080-exec-5] [a4fdbfc1] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /memos 200 (15ms)
+2026-07-07 15:52:05.623 [http-nio-8080-exec-7] [07676038] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /pins
+2026-07-07 15:52:05.638 [http-nio-8080-exec-7] [07676038] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /pins 201 (15ms)
+2026-07-07 15:52:12.612 [http-nio-8080-exec-8] [e98297fb] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /pins
+2026-07-07 15:52:12.623 [http-nio-8080-exec-8] [e98297fb] WARN  n.l.b.g.e.GlobalExceptionHandler - [BaseException] code : MEMO_NOT_FOUND, message : 메모를 찾을 수 없습니다.
+2026-07-07 15:52:12.627 [http-nio-8080-exec-8] [e98297fb] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [net.likelion.backend.global.exception.BaseException: 메모를 찾을 수 없습니다.]
+2026-07-07 15:52:12.628 [http-nio-8080-exec-8] [e98297fb] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /pins 404 (16ms)
+2026-07-07 15:52:17.382 [http-nio-8080-exec-9] [c321f56a] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /pins
+2026-07-07 15:52:17.391 [http-nio-8080-exec-9] [c321f56a] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /pins 200 (9ms)
+2026-07-07 16:18:44.869 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 24 class path changes (0 additions, 24 deletions, 0 modifications)
+2026-07-07 16:18:44.875 [Thread-5] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 16:18:44.877 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:18:44.889 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 16:18:44.890 [Thread-5] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:18:45.063 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 16:18:45.063 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 16:18:45.063 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 16:18:45.587 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 16:18:45.588 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:18:45.589 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 16:18:45.590 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 16:18:45.644 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 16:18:45.644 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 576 ms
+2026-07-07 16:18:45.884 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 16:18:45.893 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:18:45.903 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 16:18:45.907 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 0.921 seconds (process running for 1652.116)
+2026-07-07 16:18:45.908 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 16:18:49.396 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 24 class path changes (24 additions, 0 deletions, 0 modifications)
+2026-07-07 16:18:49.400 [Thread-7] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 16:18:49.403 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:18:49.429 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 16:18:49.431 [Thread-7] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:18:49.618 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 16:18:49.619 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 16:18:49.619 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 16:18:50.224 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 16:18:50.224 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:18:50.225 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 16:18:50.225 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 16:18:50.273 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 16:18:50.273 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 651 ms
+2026-07-07 16:18:50.280 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 16:18:50.412 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 16:18:50.420 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:18:50.441 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 16:18:50.450 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 0.899 seconds (process running for 1656.659)
+2026-07-07 16:18:50.451 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 16:18:54.941 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 24 class path changes (0 additions, 24 deletions, 0 modifications)
+2026-07-07 16:18:54.942 [Thread-11] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 16:18:54.943 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:18:54.953 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 16:18:54.954 [Thread-11] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:18:55.129 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 16:18:55.130 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 16:18:55.130 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 16:18:56.389 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 16:18:56.390 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:18:56.392 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 16:18:56.392 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 16:18:56.522 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 16:18:56.523 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1389 ms
+2026-07-07 16:18:56.777 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 16:18:56.792 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:18:56.806 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 16:18:56.820 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 1.785 seconds (process running for 1663.029)
+2026-07-07 16:18:56.823 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 16:19:02.946 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 24 class path changes (24 additions, 0 deletions, 0 modifications)
+2026-07-07 16:19:02.949 [Thread-15] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 16:19:02.950 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:19:02.977 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 16:19:02.978 [Thread-15] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:19:03.381 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 16:19:03.382 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 16:19:03.383 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 16:19:06.735 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 16:19:06.739 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:19:06.741 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 16:19:06.744 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 16:19:07.034 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 16:19:07.035 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3637 ms
+2026-07-07 16:19:07.075 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 16:19:08.061 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 16:19:08.089 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:19:08.115 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 16:19:08.130 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 4.978 seconds (process running for 1674.341)
+2026-07-07 16:19:08.136 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 16:19:39.781 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 24 class path changes (0 additions, 24 deletions, 0 modifications)
+2026-07-07 16:19:39.781 [Thread-19] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 16:19:39.786 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:19:39.807 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 16:19:39.807 [Thread-19] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:19:40.071 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 16:19:40.071 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 16:19:40.071 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 16:19:41.080 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 16:19:41.080 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:19:41.080 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 16:19:41.085 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 16:19:41.158 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 16:19:41.158 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1071 ms
+2026-07-07 16:19:41.357 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 16:19:41.378 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:19:41.393 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 16:19:41.399 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 1.47 seconds (process running for 1707.613)
+2026-07-07 16:19:41.404 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 16:19:49.546 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 24 class path changes (24 additions, 0 deletions, 0 modifications)
+2026-07-07 16:19:49.551 [Thread-23] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 16:19:49.551 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:19:49.577 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 16:19:49.577 [Thread-23] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:19:49.918 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 16:19:49.919 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 16:19:49.919 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 16:19:51.332 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 16:19:51.332 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:19:51.332 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 16:19:51.332 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 16:19:51.446 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 16:19:51.446 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1515 ms
+2026-07-07 16:19:51.461 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 16:19:51.856 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 16:19:51.875 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:19:51.901 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 16:19:51.912 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 2.179 seconds (process running for 1718.123)
+2026-07-07 16:19:51.917 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 16:29:45.406 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 24 class path changes (0 additions, 24 deletions, 0 modifications)
+2026-07-07 16:29:45.408 [Thread-27] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 16:29:45.409 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:29:45.422 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 16:29:45.423 [Thread-27] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:29:45.767 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 16:29:45.768 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 16:29:45.769 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 16:29:46.779 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 16:29:46.781 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:29:46.781 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 16:29:46.781 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 16:29:46.815 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 16:29:46.817 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1035 ms
+2026-07-07 16:29:46.906 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 16:29:46.913 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 16:29:46.920 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 16:29:46.925 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 1.364 seconds (process running for 2313.134)
+2026-07-07 16:29:46.926 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 17:03:54.980 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 33 class path changes (33 additions, 0 deletions, 0 modifications)
+2026-07-07 17:03:54.989 [Thread-31] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 17:03:54.992 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:03:55.012 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 17:03:55.014 [Thread-31] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:03:55.130 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:03:55.130 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:03:55.130 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:03:55.166 [restartedMain] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+2026-07-07 17:03:55.218 [restartedMain] [] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:286)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:218)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:354)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:792)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at net.likelion.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.io.FileNotFoundException: class path resource [org/springframework/security/core/userdetails/UserDetailsService.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:98)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:85)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:711)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1060)
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:441)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:385)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	... 21 common frames omitted
+2026-07-07 17:16:03.199 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:16:03.200 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:16:03.200 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:16:04.369 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:16:04.371 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:16:04.372 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:16:04.372 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 17:16:04.431 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:16:04.431 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1225 ms
+2026-07-07 17:16:04.713 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 17:16:04.732 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:16:04.752 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 17:16:04.763 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 1.673 seconds (process running for 5090.973)
+2026-07-07 17:16:04.768 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 17:16:09.851 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 35 class path changes (35 additions, 0 deletions, 0 modifications)
+2026-07-07 17:16:09.853 [Thread-35] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 17:16:09.855 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:16:09.875 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 17:16:09.876 [Thread-35] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:16:10.083 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:16:10.084 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:16:10.084 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:16:10.187 [restartedMain] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+2026-07-07 17:16:10.213 [restartedMain] [] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:286)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:218)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:354)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:792)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at net.likelion.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.io.FileNotFoundException: class path resource [org/springframework/security/core/userdetails/UserDetailsService.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:98)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:85)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:711)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1060)
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:441)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:385)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	... 21 common frames omitted
+2026-07-07 17:21:04.859 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:21:04.860 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:21:04.860 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:21:05.727 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:21:05.729 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:21:05.730 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:21:05.730 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 17:21:05.807 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:21:05.807 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 944 ms
+2026-07-07 17:21:05.974 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 17:21:05.985 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:21:05.996 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 17:21:06.001 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 1.207 seconds (process running for 5392.211)
+2026-07-07 17:21:06.003 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 17:21:10.623 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 35 class path changes (35 additions, 0 deletions, 0 modifications)
+2026-07-07 17:21:10.625 [Thread-41] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 17:21:10.626 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:21:10.643 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 17:21:10.643 [Thread-41] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:21:10.975 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:21:10.975 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:21:10.975 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:21:11.245 [restartedMain] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+2026-07-07 17:21:11.285 [restartedMain] [] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:286)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:218)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:354)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:792)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at net.likelion.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.io.FileNotFoundException: class path resource [org/springframework/security/core/userdetails/UserDetailsService.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:98)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:85)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:711)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1060)
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:441)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:385)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	... 21 common frames omitted
+2026-07-07 17:21:18.155 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:21:18.157 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:21:18.157 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:21:19.592 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:21:19.594 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:21:19.595 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:21:19.595 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 17:21:19.675 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:21:19.675 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1505 ms
+2026-07-07 17:21:19.761 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 17:21:19.768 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:21:19.775 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 17:21:19.779 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 1.769 seconds (process running for 5405.988)
+2026-07-07 17:21:19.780 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 17:21:23.839 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 35 class path changes (35 additions, 0 deletions, 0 modifications)
+2026-07-07 17:21:23.841 [Thread-47] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 17:21:23.842 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:21:23.862 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 17:21:23.863 [Thread-47] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:21:24.062 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:21:24.063 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:21:24.064 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:21:24.194 [restartedMain] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+2026-07-07 17:21:24.203 [restartedMain] [] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:286)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:218)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:354)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:792)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at net.likelion.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.io.FileNotFoundException: class path resource [org/springframework/security/core/userdetails/UserDetailsService.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:98)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:85)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:711)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1060)
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:441)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:385)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	... 21 common frames omitted
+2026-07-07 17:29:13.282 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:29:13.283 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:29:13.283 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:29:13.912 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:29:13.913 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:29:13.914 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:29:13.914 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 17:29:13.957 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:29:13.957 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 671 ms
+2026-07-07 17:29:14.044 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 17:29:14.051 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:29:14.058 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 17:29:14.061 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 0.835 seconds (process running for 5880.271)
+2026-07-07 17:29:14.062 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 17:29:17.521 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 36 class path changes (36 additions, 0 deletions, 0 modifications)
+2026-07-07 17:29:17.524 [Thread-53] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 17:29:17.525 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:29:17.547 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 17:29:17.548 [Thread-53] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:29:17.687 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:29:17.688 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:29:17.688 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:29:17.736 [restartedMain] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+2026-07-07 17:29:17.745 [restartedMain] [] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:286)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:218)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:354)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:792)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at net.likelion.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.io.FileNotFoundException: class path resource [org/springframework/security/core/userdetails/UserDetailsService.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:98)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:85)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:711)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1060)
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:441)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:385)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	... 21 common frames omitted
+2026-07-07 17:37:58.468 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:37:58.468 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:37:58.468 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:37:58.521 [restartedMain] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+2026-07-07 17:37:58.531 [restartedMain] [] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:286)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:218)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:354)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:792)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at net.likelion.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.io.FileNotFoundException: class path resource [org/springframework/security/core/userdetails/UserDetailsService.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:98)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:85)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:711)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1060)
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:441)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:385)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	... 21 common frames omitted
+2026-07-07 17:38:01.261 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 16156 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:38:01.261 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:38:01.261 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:38:01.298 [restartedMain] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+2026-07-07 17:38:01.303 [restartedMain] [] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [net.likelion.backend.domain.user.security.CustomUserDetailsService]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:286)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:218)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:354)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:792)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at net.likelion.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.io.FileNotFoundException: class path resource [org/springframework/security/core/userdetails/UserDetailsService.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:98)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:85)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:711)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1060)
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:441)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:385)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281)
+	... 21 common frames omitted
+2026-07-07 17:40:57.777 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-07 17:40:57.887 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 11180 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:40:57.888 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:40:57.888 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:40:57.999 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-07 17:40:57.999 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-07 17:41:02.909 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 17:41:03.441 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 485 ms. Found 1 JPA repository interface.
+2026-07-07 17:41:05.581 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:41:05.601 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:41:05.606 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:41:05.606 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 17:41:05.740 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:41:05.740 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7736 ms
+2026-07-07 17:41:05.928 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-07 17:41:06.961 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a3f819f1-4235-4319-9da0-4ffe9474dd26 user=SA
+2026-07-07 17:41:06.968 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-07 17:41:07.199 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 17:41:07.577 [restartedMain] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-07-07 17:41:07.808 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 17:41:09.504 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 17:41:09.949 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 17:41:12.352 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 17:41:12.425 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 17:41:12.928 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 17:41:12.928 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 17:41:13.156 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 17:41:13.217 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 17:41:13.992 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:a3f819f1-4235-4319-9da0-4ffe9474dd26'
+2026-07-07 17:41:14.153 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 17:41:14.191 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:41:14.229 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 17:41:14.239 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 17.605 seconds (process running for 19.14)
+2026-07-07 17:41:14.371 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-07 17:41:14.371 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-07 17:41:14.375 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-07-07 17:41:14.495 [http-nio-8080-exec-1] [97cda0de] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.html
+2026-07-07 17:41:14.693 [http-nio-8080-exec-1] [97cda0de] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.html 304 (198ms)
+2026-07-07 17:41:14.734 [http-nio-8080-exec-2] [cfb43294] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-initializer.js
+2026-07-07 17:41:14.864 [http-nio-8080-exec-2] [cfb43294] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-initializer.js 200 (125ms)
+2026-07-07 17:41:14.920 [http-nio-8080-exec-9] [ef074c18] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs/swagger-config
+2026-07-07 17:41:15.081 [http-nio-8080-exec-9] [ef074c18] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs/swagger-config 200 (161ms)
+2026-07-07 17:41:15.102 [http-nio-8080-exec-3] [835845c5] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs
+2026-07-07 17:41:16.877 [http-nio-8080-exec-3] [835845c5] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1671 ms
+2026-07-07 17:41:16.965 [http-nio-8080-exec-3] [835845c5] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs 200 (1863ms)
+2026-07-07 17:42:57.168 [http-nio-8080-exec-8] [8ee6e6ce] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/signup
+2026-07-07 17:42:58.053 [http-nio-8080-exec-8] [8ee6e6ce] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/signup 200 (885ms)
+2026-07-07 17:43:19.181 [http-nio-8080-exec-10] [cf07e325] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-07 17:43:19.579 [http-nio-8080-exec-10] [cf07e325] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 200 (398ms)
+2026-07-07 17:46:36.362 [http-nio-8080-exec-7] [bcd12fb0] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.html
+2026-07-07 17:46:36.373 [http-nio-8080-exec-7] [bcd12fb0] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.html 304 (11ms)
+2026-07-07 17:46:36.394 [http-nio-8080-exec-6] [ed53e006] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-initializer.js
+2026-07-07 17:46:36.405 [http-nio-8080-exec-6] [ed53e006] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-initializer.js 200 (11ms)
+2026-07-07 17:46:36.463 [http-nio-8080-exec-4] [aa7c0462] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs/swagger-config
+2026-07-07 17:46:36.468 [http-nio-8080-exec-4] [aa7c0462] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs/swagger-config 200 (5ms)
+2026-07-07 17:46:36.473 [http-nio-8080-exec-8] [d337ef63] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs
+2026-07-07 17:46:36.504 [http-nio-8080-exec-8] [d337ef63] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs 200 (31ms)
+2026-07-07 17:47:41.839 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-07-07 17:47:41.845 [Thread-5] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 17:47:41.850 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:47:41.871 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 17:47:41.877 [Thread-5] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:47:41.887 [Thread-5] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 17:47:41.908 [Thread-5] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 17:47:41.908 [Thread-5] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-07 17:47:41.913 [Thread-5] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-07 17:47:42.325 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 11180 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:47:42.325 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:47:42.325 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:47:44.334 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 17:47:44.462 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interface.
+2026-07-07 17:47:44.818 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:47:44.824 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:47:44.824 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:47:44.824 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 17:47:44.924 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:47:44.924 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2583 ms
+2026-07-07 17:47:45.093 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-07-07 17:47:45.100 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:6acc8e80-ac7e-463b-a314-3ee8aeb8f1b8 user=SA
+2026-07-07 17:47:45.100 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-07-07 17:47:45.103 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 17:47:45.120 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 17:47:45.172 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 17:47:45.186 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 17:47:45.410 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 17:47:45.421 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 17:47:45.564 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 17:47:45.564 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 17:47:45.716 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 17:47:45.743 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 17:47:46.187 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:6acc8e80-ac7e-463b-a314-3ee8aeb8f1b8'
+2026-07-07 17:47:46.261 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 17:47:46.293 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:47:46.309 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 17:47:46.320 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 4.216 seconds (process running for 411.223)
+2026-07-07 17:47:46.325 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 17:47:48.968 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-07-07 17:47:48.973 [Thread-7] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 17:47:48.973 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:47:48.994 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 17:47:48.994 [Thread-7] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:47:49.005 [Thread-7] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 17:47:49.007 [Thread-7] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 17:47:49.007 [Thread-7] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-07-07 17:47:49.010 [Thread-7] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-07-07 17:47:49.341 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 11180 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 17:47:49.341 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 17:47:49.341 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:47:50.322 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 17:47:50.386 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+2026-07-07 17:47:50.568 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:47:50.568 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:47:50.568 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:47:50.568 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 17:47:51.169 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:47:51.169 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1823 ms
+2026-07-07 17:47:51.412 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-07-07 17:47:51.422 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:f49257e5-aadf-42a1-969d-acd95d44b047 user=SA
+2026-07-07 17:47:51.423 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-07-07 17:47:51.428 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 17:47:51.453 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 17:47:51.508 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 17:47:51.518 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 17:47:51.713 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 17:47:51.724 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 17:47:51.970 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 17:47:51.970 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 17:47:52.139 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 17:47:52.171 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 17:47:52.803 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:f49257e5-aadf-42a1-969d-acd95d44b047'
+2026-07-07 17:47:52.883 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 17:47:52.919 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:47:52.940 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 17:47:52.952 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 3.779 seconds (process running for 417.854)
+2026-07-07 17:47:52.958 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 17:47:53.244 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-07 17:47:53.244 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-07 17:47:53.258 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2026-07-07 17:50:04.549 [http-nio-8080-exec-3] [67cb6cc0] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-07 17:50:04.601 [http-nio-8080-exec-3] [67cb6cc0] WARN  n.l.b.g.e.GlobalExceptionHandler - [BaseException] code : USER_NOT_FOUND, message : 사용자를 찾을 수 없습니다.
+2026-07-07 17:50:04.633 [http-nio-8080-exec-3] [67cb6cc0] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [net.likelion.backend.global.exception.BaseException: 사용자를 찾을 수 없습니다.]
+2026-07-07 17:50:04.638 [http-nio-8080-exec-3] [67cb6cc0] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 404 (89ms)
+2026-07-07 17:50:24.880 [http-nio-8080-exec-6] [ac8c81c6] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/signup
+2026-07-07 17:50:25.091 [http-nio-8080-exec-6] [ac8c81c6] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/signup 200 (211ms)
+2026-07-07 17:50:49.064 [http-nio-8080-exec-5] [473aaeeb] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-07 17:50:49.269 [http-nio-8080-exec-5] [473aaeeb] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 200 (205ms)
+2026-07-07 17:52:17.487 [http-nio-8080-exec-10] [2ac1a600] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-ui.css.map
+2026-07-07 17:52:17.534 [http-nio-8080-exec-10] [2ac1a600] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-ui.css.map 200 (47ms)
+2026-07-07 17:55:59.897 [http-nio-8080-exec-2] [254ab9a2] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-07 17:56:00.107 [http-nio-8080-exec-2] [254ab9a2] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 200 (210ms)
+2026-07-07 17:57:21.067 [http-nio-8080-exec-5] [3c9c68f7] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-ui.css.map
+2026-07-07 17:57:21.103 [http-nio-8080-exec-5] [3c9c68f7] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-ui.css.map 200 (36ms)
+2026-07-07 18:06:39.137 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 18:06:39.162 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 18:06:39.167 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:06:39.170 [SpringApplicationShutdownHook] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 18:06:39.170 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-07-07 18:06:39.172 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-07-07 18:06:54.516 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-07 18:06:54.618 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 8868 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 18:06:54.619 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 18:06:54.621 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:06:54.705 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-07 18:06:54.706 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-07 18:06:56.364 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 18:06:56.537 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 153 ms. Found 1 JPA repository interface.
+2026-07-07 18:06:57.449 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 18:06:57.471 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:06:57.474 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:06:57.474 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 18:06:57.579 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:06:57.580 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2872 ms
+2026-07-07 18:06:57.745 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-07 18:06:58.062 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:61aa1cf7-722f-4c17-8e28-665fb9e9297e user=SA
+2026-07-07 18:06:58.066 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-07 18:06:58.135 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 18:06:58.261 [restartedMain] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-07-07 18:06:58.335 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 18:06:58.883 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 18:06:59.048 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 18:07:00.595 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 18:07:00.700 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:07:02.313 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 18:07:02.314 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 18:07:02.935 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 18:07:03.067 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 18:07:04.840 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:61aa1cf7-722f-4c17-8e28-665fb9e9297e'
+2026-07-07 18:07:05.387 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 18:07:05.476 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:07:05.577 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 18:07:05.618 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 12.0 seconds (process running for 13.176)
+2026-07-07 18:07:05.892 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-07 18:07:05.892 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-07 18:07:05.898 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2026-07-07 18:07:05.995 [http-nio-8080-exec-1] [f102656c] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.html
+2026-07-07 18:07:06.086 [http-nio-8080-exec-1] [f102656c] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.html 304 (91ms)
+2026-07-07 18:07:06.115 [http-nio-8080-exec-2] [979a88fb] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-initializer.js
+2026-07-07 18:07:06.308 [http-nio-8080-exec-2] [979a88fb] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-initializer.js 200 (193ms)
+2026-07-07 18:07:06.339 [http-nio-8080-exec-3] [523e3778] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs/swagger-config
+2026-07-07 18:07:06.480 [http-nio-8080-exec-3] [523e3778] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs/swagger-config 200 (141ms)
+2026-07-07 18:07:06.496 [http-nio-8080-exec-4] [4c35dedf] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs
+2026-07-07 18:07:08.283 [http-nio-8080-exec-4] [4c35dedf] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1745 ms
+2026-07-07 18:07:08.459 [http-nio-8080-exec-4] [4c35dedf] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs 200 (1963ms)
+2026-07-07 18:07:28.883 [http-nio-8080-exec-5] [73e878fc] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/signup
+2026-07-07 18:07:29.893 [http-nio-8080-exec-5] [73e878fc] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/signup 200 (1010ms)
+2026-07-07 18:07:43.673 [http-nio-8080-exec-6] [5d1dd8ac] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-07 18:07:44.069 [http-nio-8080-exec-6] [5d1dd8ac] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 200 (396ms)
+2026-07-07 18:10:04.785 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-07-07 18:10:04.793 [Thread-5] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 18:10:04.796 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:10:04.817 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 18:10:04.819 [Thread-5] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:10:04.830 [Thread-5] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:10:04.853 [Thread-5] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 18:10:04.854 [Thread-5] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-07 18:10:04.858 [Thread-5] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-07 18:10:05.079 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 8868 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 18:10:05.080 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 18:10:05.080 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:10:06.065 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 18:10:06.227 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 159 ms. Found 1 JPA repository interface.
+2026-07-07 18:10:06.509 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 18:10:06.511 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:10:06.512 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:10:06.512 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 18:10:06.651 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:10:06.651 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1566 ms
+2026-07-07 18:10:06.783 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-07-07 18:10:06.787 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:597bd431-c079-4fae-913a-345be8a4a2ff user=SA
+2026-07-07 18:10:06.787 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-07-07 18:10:06.791 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 18:10:06.804 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 18:10:06.828 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 18:10:06.833 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 18:10:06.910 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 18:10:06.915 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:10:06.982 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 18:10:06.982 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 18:10:07.076 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 18:10:07.091 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 18:10:07.345 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:597bd431-c079-4fae-913a-345be8a4a2ff'
+2026-07-07 18:10:07.377 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 18:10:07.388 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:10:07.394 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 18:10:07.401 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 2.413 seconds (process running for 194.958)
+2026-07-07 18:10:07.404 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 18:10:09.012 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-07-07 18:10:09.015 [Thread-7] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 18:10:09.016 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:10:09.035 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 18:10:09.036 [Thread-7] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:10:09.042 [Thread-7] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:10:09.046 [Thread-7] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 18:10:09.047 [Thread-7] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-07-07 18:10:09.048 [Thread-7] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-07-07 18:10:09.302 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 8868 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 18:10:09.303 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 18:10:09.303 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:10:10.485 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 18:10:10.577 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2026-07-07 18:10:11.005 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 18:10:11.009 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:10:11.010 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:10:11.011 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 18:10:11.265 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:10:11.266 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1952 ms
+2026-07-07 18:10:11.492 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-07-07 18:10:11.501 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:92431439-844d-404c-b66f-4375141827bb user=SA
+2026-07-07 18:10:11.502 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-07-07 18:10:11.512 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 18:10:11.563 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 18:10:11.657 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 18:10:11.669 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 18:10:12.070 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 18:10:12.088 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:10:12.641 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 18:10:12.642 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 18:10:12.942 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 18:10:12.990 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 18:10:13.793 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:92431439-844d-404c-b66f-4375141827bb'
+2026-07-07 18:10:13.907 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 18:10:13.951 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:10:13.971 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 18:10:13.979 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 4.812 seconds (process running for 201.535)
+2026-07-07 18:10:13.982 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 18:10:16.844 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 18:10:16.874 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 18:10:16.884 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:10:16.888 [SpringApplicationShutdownHook] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 18:10:16.889 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-07-07 18:10:16.891 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-07-07 18:10:30.706 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-07 18:10:31.130 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 9628 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 18:10:31.135 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 18:10:31.140 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:10:31.579 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-07 18:10:31.584 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-07 18:10:37.133 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 18:10:37.511 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 338 ms. Found 1 JPA repository interface.
+2026-07-07 18:10:39.472 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 18:10:39.508 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:10:39.514 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:10:39.514 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 18:10:39.706 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:10:39.707 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8117 ms
+2026-07-07 18:10:40.140 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-07 18:10:41.415 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:c7cd64db-d7f8-4def-af87-2005fa710237 user=SA
+2026-07-07 18:10:41.426 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-07 18:10:41.639 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 18:10:42.059 [restartedMain] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-07-07 18:10:42.335 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 18:10:44.165 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 18:10:44.563 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 18:10:48.490 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 18:10:48.626 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:10:49.501 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 18:10:49.502 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 18:10:49.944 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 18:10:50.031 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 18:10:51.545 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:c7cd64db-d7f8-4def-af87-2005fa710237'
+2026-07-07 18:10:51.798 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 18:10:51.909 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 18:10:51.927 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 24.253 seconds (process running for 27.314)
+2026-07-07 18:10:51.931 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 18:10:51.945 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 18:10:51.954 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:10:51.968 [SpringApplicationShutdownHook] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 18:10:51.969 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-07 18:10:51.972 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-07 18:11:02.708 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-07 18:11:03.016 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 28132 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 18:11:03.019 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 18:11:03.022 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:11:03.260 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-07 18:11:03.261 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-07 18:11:08.597 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 18:11:08.927 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 291 ms. Found 1 JPA repository interface.
+2026-07-07 18:11:11.506 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 18:11:11.550 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:11:11.554 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:11:11.554 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 18:11:11.827 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:11:11.827 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8563 ms
+2026-07-07 18:11:12.225 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-07 18:11:13.744 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cf20a69e-b3ce-4d95-890e-3f02965b7b6f user=SA
+2026-07-07 18:11:13.771 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-07 18:11:14.175 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 18:11:14.697 [restartedMain] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-07-07 18:11:15.302 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 18:11:17.107 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 18:11:17.442 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 18:11:20.811 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 18:11:20.954 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:11:21.778 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 18:11:21.779 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 18:11:22.040 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 18:11:22.120 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 18:11:23.300 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cf20a69e-b3ce-4d95-890e-3f02965b7b6f'
+2026-07-07 18:11:23.549 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 18:11:23.591 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:11:23.639 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 18:11:23.652 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 22.879 seconds (process running for 24.86)
+2026-07-07 18:11:24.491 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-07 18:11:24.492 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-07 18:11:24.494 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-07-07 18:11:24.540 [http-nio-8080-exec-1] [1c2b58f6] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger
+2026-07-07 18:11:24.668 [http-nio-8080-exec-1] [1c2b58f6] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger 302 (128ms)
+2026-07-07 18:11:24.682 [http-nio-8080-exec-2] [834ce693] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.html
+2026-07-07 18:11:24.697 [http-nio-8080-exec-2] [834ce693] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.html 200 (15ms)
+2026-07-07 18:11:24.750 [http-nio-8080-exec-3] [4cd07cdf] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-initializer.js
+2026-07-07 18:11:24.822 [http-nio-8080-exec-3] [4cd07cdf] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-initializer.js 200 (72ms)
+2026-07-07 18:11:24.981 [http-nio-8080-exec-4] [172c5970] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs/swagger-config
+2026-07-07 18:11:25.027 [http-nio-8080-exec-4] [172c5970] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs/swagger-config 200 (46ms)
+2026-07-07 18:11:25.043 [http-nio-8080-exec-5] [9d4a818e] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs
+2026-07-07 18:11:25.907 [http-nio-8080-exec-5] [9d4a818e] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 833 ms
+2026-07-07 18:11:25.947 [http-nio-8080-exec-5] [9d4a818e] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs 200 (904ms)
+2026-07-07 18:11:43.657 [http-nio-8080-exec-6] [a2dc4552] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/signup
+2026-07-07 18:11:44.578 [http-nio-8080-exec-6] [a2dc4552] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/signup 200 (921ms)
+2026-07-07 18:11:55.316 [http-nio-8080-exec-7] [2ea69fb6] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-07 18:11:55.719 [http-nio-8080-exec-7] [2ea69fb6] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 200 (403ms)
+2026-07-07 18:13:24.775 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 18:13:24.790 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 18:13:24.799 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:13:24.813 [SpringApplicationShutdownHook] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 18:13:24.813 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-07 18:13:24.815 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-07 18:13:31.798 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-07 18:13:31.866 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 11984 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 18:13:31.867 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 18:13:31.868 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:13:31.929 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-07 18:13:31.930 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-07 18:13:33.655 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 18:13:33.830 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 152 ms. Found 1 JPA repository interface.
+2026-07-07 18:13:35.077 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 18:13:35.105 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:13:35.109 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:13:35.109 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 18:13:35.243 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:13:35.244 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3314 ms
+2026-07-07 18:13:35.544 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-07 18:13:36.156 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:f6e3652c-bc17-4f55-a7d1-7731602a2edc user=SA
+2026-07-07 18:13:36.161 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-07 18:13:36.267 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 18:13:36.427 [restartedMain] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-07-07 18:13:36.532 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 18:13:37.233 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 18:13:37.396 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 18:13:39.102 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 18:13:39.171 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:13:39.669 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 18:13:39.669 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 18:13:39.942 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 18:13:40.023 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 18:13:40.932 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:f6e3652c-bc17-4f55-a7d1-7731602a2edc'
+2026-07-07 18:13:41.109 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 18:13:41.149 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:13:41.195 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 18:13:41.217 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 10.355 seconds (process running for 11.462)
+2026-07-07 18:13:49.297 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-07 18:13:49.297 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-07 18:13:49.302 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-07-07 18:13:49.371 [http-nio-8080-exec-1] [a3d77768] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.html
+2026-07-07 18:13:49.472 [http-nio-8080-exec-1] [a3d77768] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.html 304 (101ms)
+2026-07-07 18:13:49.492 [http-nio-8080-exec-4] [af2994c7] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-initializer.js
+2026-07-07 18:13:49.612 [http-nio-8080-exec-4] [af2994c7] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-initializer.js 200 (120ms)
+2026-07-07 18:13:49.647 [http-nio-8080-exec-2] [67714bee] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs/swagger-config
+2026-07-07 18:13:49.780 [http-nio-8080-exec-2] [67714bee] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs/swagger-config 200 (133ms)
+2026-07-07 18:13:49.796 [http-nio-8080-exec-6] [bac0c4ba] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs
+2026-07-07 18:13:51.292 [http-nio-8080-exec-6] [bac0c4ba] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1443 ms
+2026-07-07 18:13:51.371 [http-nio-8080-exec-6] [bac0c4ba] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs 200 (1575ms)
+2026-07-07 18:14:10.522 [http-nio-8080-exec-5] [8d045003] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-07 18:14:11.138 [http-nio-8080-exec-5] [8d045003] WARN  n.l.b.g.e.GlobalExceptionHandler - [BaseException] code : USER_NOT_FOUND, message : 사용자를 찾을 수 없습니다.
+2026-07-07 18:14:11.148 [http-nio-8080-exec-5] [8d045003] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [net.likelion.backend.global.exception.BaseException: 사용자를 찾을 수 없습니다.]
+2026-07-07 18:14:11.148 [http-nio-8080-exec-5] [8d045003] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 404 (626ms)
+2026-07-07 18:14:22.244 [http-nio-8080-exec-3] [2363e251] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/signup
+2026-07-07 18:14:22.611 [http-nio-8080-exec-3] [2363e251] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/signup 200 (367ms)
+2026-07-07 18:14:32.092 [http-nio-8080-exec-7] [2c0c9bb0] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-07 18:14:32.400 [http-nio-8080-exec-7] [2c0c9bb0] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 200 (308ms)
+2026-07-07 18:16:58.999 [File Watcher] [] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-07-07 18:16:59.005 [Thread-5] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 18:16:59.007 [tomcat-shutdown] [] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:16:59.018 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 18:16:59.019 [Thread-5] [] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:16:59.026 [Thread-5] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:16:59.040 [Thread-5] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 18:16:59.041 [Thread-5] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-07 18:16:59.044 [Thread-5] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-07 18:16:59.243 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 11984 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 18:16:59.243 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 18:16:59.244 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:17:00.240 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 18:17:00.326 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interface.
+2026-07-07 18:17:00.408 [restartedMain] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Could not enhance configuration class [net.likelion.backend.global.config.SecurityConfig]. Consider declaring @Configuration(proxyBeanMethods=false) without inter-bean references between @Bean methods on the configuration class, avoiding the need for CGLIB enhancement.
+2026-07-07 18:17:00.413 [restartedMain] [] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-07 18:17:00.445 [restartedMain] [] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Could not enhance configuration class [net.likelion.backend.global.config.SecurityConfig]. Consider declaring @Configuration(proxyBeanMethods=false) without inter-bean references between @Bean methods on the configuration class, avoiding the need for CGLIB enhancement.
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:136)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:539)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:363)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:792)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at net.likelion.backend.BackendApplication.main(BackendApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.cglib.core.CodeGenerationException: java.lang.NoClassDefFoundError-->net/likelion/backend/global/jwt/JwtAuthenticationFilter
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:202)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:128)
+	... 16 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: net/likelion/backend/global/jwt/JwtAuthenticationFilter
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3551)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2729)
+	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:655)
+	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:35)
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:26)
+	at org.springframework.cglib.core.ClassLoaderAwareGeneratorStrategy.lambda$new$0(ClassLoaderAwareGeneratorStrategy.java:41)
+	at org.springframework.cglib.core.ClassLoaderAwareGeneratorStrategy.generate(ClassLoaderAwareGeneratorStrategy.java:76)
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:370)
+	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:575)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:133)
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:321)
+	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:562)
+	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:407)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:198)
+	... 17 common frames omitted
+Caused by: java.lang.ClassNotFoundException: net.likelion.backend.global.jwt.JwtAuthenticationFilter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:536)
+	at java.base/java.lang.Class.forName(Class.java:515)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 32 common frames omitted
+2026-07-07 18:17:03.126 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 11984 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 18:17:03.126 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 18:17:03.126 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:17:03.597 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 18:17:03.631 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-07-07 18:17:03.773 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 18:17:03.775 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:17:03.775 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:17:03.776 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 18:17:03.876 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:17:03.877 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 748 ms
+2026-07-07 18:17:03.948 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-07-07 18:17:03.951 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:5bbb8df4-0a23-4cab-9b71-c5d7100ee2de user=SA
+2026-07-07 18:17:03.951 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-07-07 18:17:03.954 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 18:17:03.966 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 18:17:03.992 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 18:17:03.998 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 18:17:04.141 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 18:17:04.148 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:17:04.259 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 18:17:04.259 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 18:17:04.361 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 18:17:04.376 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 18:17:04.828 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:5bbb8df4-0a23-4cab-9b71-c5d7100ee2de'
+2026-07-07 18:17:04.912 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 18:17:04.967 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:17:04.980 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 18:17:04.988 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 1.918 seconds (process running for 215.233)
+2026-07-07 18:17:04.993 [restartedMain] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-07 18:17:10.809 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 18:17:10.818 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 18:17:10.836 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:17:10.837 [SpringApplicationShutdownHook] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 18:17:10.837 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-07-07 18:17:10.838 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-07-07 18:17:44.359 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-07 18:17:44.593 [restartedMain] [] INFO  n.l.backend.BackendApplication - Starting BackendApplication using Java 21.0.11 with PID 22140 (C:\Users\user\Desktop\backend\backend\out\production\classes started by user in C:\Users\user\Desktop\backend\backend)
+2026-07-07 18:17:44.595 [restartedMain] [] DEBUG n.l.backend.BackendApplication - Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-07-07 18:17:44.596 [restartedMain] [] INFO  n.l.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:17:44.739 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-07 18:17:44.740 [restartedMain] [] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-07 18:17:47.959 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 18:17:48.406 [restartedMain] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 417 ms. Found 1 JPA repository interface.
+2026-07-07 18:17:50.484 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 18:17:50.519 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:17:50.523 [restartedMain] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:17:50.523 [restartedMain] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-07-07 18:17:50.699 [restartedMain] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:17:50.701 [restartedMain] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5958 ms
+2026-07-07 18:17:51.057 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-07 18:17:51.736 [restartedMain] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:64d75775-68da-41be-877f-24c87818ecc5 user=SA
+2026-07-07 18:17:51.741 [restartedMain] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-07 18:17:51.895 [restartedMain] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 18:17:52.186 [restartedMain] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-07-07 18:17:52.297 [restartedMain] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 18:17:53.063 [restartedMain] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 18:17:53.286 [restartedMain] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07 18:17:58.193 [restartedMain] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 18:17:58.417 [restartedMain] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:17:59.892 [restartedMain] [] DEBUG n.l.b.g.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-07 18:17:59.895 [restartedMain] [] DEBUG n.l.b.global.filter.LoggingFilter - Filter 'loggingFilter' configured for use
+2026-07-07 18:18:00.526 [restartedMain] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07 18:18:00.649 [restartedMain] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-07 18:18:02.308 [restartedMain] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:64d75775-68da-41be-877f-24c87818ecc5'
+2026-07-07 18:18:02.452 [restartedMain] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-07 18:18:02.479 [restartedMain] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:18:02.514 [restartedMain] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-07 18:18:02.526 [restartedMain] [] INFO  n.l.backend.BackendApplication - Started BackendApplication in 19.733 seconds (process running for 21.092)
+2026-07-07 18:18:07.351 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-07 18:18:07.353 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-07 18:18:07.360 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2026-07-07 18:18:07.511 [http-nio-8080-exec-1] [5a87bc30] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/index.html
+2026-07-07 18:18:07.664 [http-nio-8080-exec-1] [5a87bc30] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/index.html 304 (153ms)
+2026-07-07 18:18:07.709 [http-nio-8080-exec-3] [788c2514] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /swagger-ui/swagger-initializer.js
+2026-07-07 18:18:07.919 [http-nio-8080-exec-3] [788c2514] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /swagger-ui/swagger-initializer.js 200 (206ms)
+2026-07-07 18:18:07.971 [http-nio-8080-exec-2] [4d28bb62] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs/swagger-config
+2026-07-07 18:18:08.181 [http-nio-8080-exec-2] [4d28bb62] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs/swagger-config 200 (210ms)
+2026-07-07 18:18:08.200 [http-nio-8080-exec-8] [2815c991] INFO  n.l.b.global.filter.LoggingFilter - [요청] GET /api-docs
+2026-07-07 18:18:09.543 [http-nio-8080-exec-8] [2815c991] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1256 ms
+2026-07-07 18:18:09.596 [http-nio-8080-exec-8] [2815c991] INFO  n.l.b.global.filter.LoggingFilter - [응답] GET /api-docs 200 (1396ms)
+2026-07-07 18:18:17.668 [http-nio-8080-exec-9] [30c27e1f] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/signup
+2026-07-07 18:18:19.259 [http-nio-8080-exec-9] [30c27e1f] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/signup 200 (1591ms)
+2026-07-07 18:18:26.444 [http-nio-8080-exec-6] [3ecbcbb3] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /api/users/login
+2026-07-07 18:18:26.801 [http-nio-8080-exec-6] [3ecbcbb3] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /api/users/login 200 (357ms)
+2026-07-07 18:18:46.062 [http-nio-8080-exec-7] [e7d8b1af] INFO  n.l.b.global.filter.LoggingFilter - [요청] POST /memos
+2026-07-07 18:18:46.156 [http-nio-8080-exec-7] [e7d8b1af] INFO  n.l.b.global.filter.LoggingFilter - [응답] POST /memos 201 (94ms)
+2026-07-07 18:21:33.847 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-07 18:21:33.857 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-07 18:21:33.861 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 18:21:33.869 [SpringApplicationShutdownHook] [] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-07-07 18:21:33.869 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-07 18:21:33.871 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

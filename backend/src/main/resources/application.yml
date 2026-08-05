@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: backend
+
+  profiles: # 여기부터 추가!
+    active: dev 
