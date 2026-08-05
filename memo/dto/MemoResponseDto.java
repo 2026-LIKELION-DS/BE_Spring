@@ -11,6 +11,7 @@ public class MemoResponseDto {
     private Long id;
     private String content;
 
-    public static MemoResponseDto from(Memo memo){return new MemoResponseDto(memo.getId(), memo.getContent());
+    public static MemoResponseDto from(Memo memo){
+        return new MemoResponseDto(memo.getId(), memo.getContent());
     }
 }
