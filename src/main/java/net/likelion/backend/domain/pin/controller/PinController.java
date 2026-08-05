@@ -1,7 +1,7 @@
 package net.likelion.backend.domain.pin.controller;
 
+
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
@@ -9,10 +9,14 @@ import lombok.RequiredArgsConstructor;
 import net.likelion.backend.domain.pin.dto.PinRequestDto;
 import net.likelion.backend.domain.pin.dto.PinResponseDto;
 import net.likelion.backend.domain.pin.service.PinService;
+import net.likelion.backend.global.dto.ApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 
 @Tag(name = "Pin", description = "메모 고정 API")
@@ -24,21 +28,22 @@ public class PinController {
     private final PinService pinService;
 
     @Operation(summary = "고정된 메모 전체 조회", description = "고정된 모든 메모 목록을 반환합니다.")
-    @ApiResponse(responseCode = "200", description = "조회 성공")
+    @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "200", description = "조회 성공")
 
     @GetMapping
-    public ResponseEntity<List<PinResponseDto>> getAlL() {
-        return ResponseEntity.ok(pinService.getAll());
+    public ResponseEntity<ApiResponse<List<PinResponseDto>>> getAlL() {
+        return ResponseEntity.ok(ApiResponse.success("조회 성공",pinService.getAll()));
     }
 
     @Operation(summary = "메모 고정", description = "메모를 고정합니다.")
     @ApiResponses({
-            @ApiResponse(responseCode = "201", description = "고정 성공"),
-            @ApiResponse(responseCode = "400", description = "존재하지 않는 메모 ID")
+            @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "201", description = "고정 성공"),
+            @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "400", description = "존재하지 않는 메모 ID")
     })
 
     @PostMapping
-    public ResponseEntity<PinResponseDto> create(@RequestBody @Valid PinRequestDto request) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(pinService.create(request));
+    public ResponseEntity<ApiResponse<PinResponseDto>> create(@RequestBody @Valid PinRequestDto request) {
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body(ApiResponse.success("메모가 고정되었습니다.", pinService.create(request)));
     }
 }
